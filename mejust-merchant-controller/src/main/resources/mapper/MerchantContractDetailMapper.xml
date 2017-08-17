@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantContractDetailMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantContractDetail">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="promdisbeg" jdbcType="DECIMAL" property="promdisbeg" />
+    <result column="promdisend" jdbcType="DECIMAL" property="promdisend" />
+    <result column="funcmoney" jdbcType="DECIMAL" property="funcmoney" />
+  </resultMap>
+</mapper>

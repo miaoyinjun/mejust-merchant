@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantLogMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="opdate" jdbcType="TIMESTAMP" property="opdate" />
+    <result column="operator" jdbcType="CHAR" property="operator" />
+    <result column="origincontent" jdbcType="LONGVARCHAR" property="origincontent" />
+    <result column="updatecontent" jdbcType="LONGVARCHAR" property="updatecontent" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantAjcodenoMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantAjcodeno">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="category_d" jdbcType="CHAR" property="categoryD" />
+    <result column="maxamount" jdbcType="DECIMAL" property="maxamount" />
+    <result column="rate" jdbcType="DECIMAL" property="rate" />
+  </resultMap>
+</mapper>

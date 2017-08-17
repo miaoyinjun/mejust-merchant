@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantPhotoMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantPhoto">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="photo1" jdbcType="VARCHAR" property="photo1" />
+    <result column="photoline1" jdbcType="VARCHAR" property="photoline1" />
+    <result column="photo2" jdbcType="VARCHAR" property="photo2" />
+    <result column="photoline2" jdbcType="VARCHAR" property="photoline2" />
+    <result column="photo3" jdbcType="VARCHAR" property="photo3" />
+    <result column="photoline3" jdbcType="VARCHAR" property="photoline3" />
+    <result column="photo4" jdbcType="VARCHAR" property="photo4" />
+    <result column="photoline4" jdbcType="VARCHAR" property="photoline4" />
+    <result column="photo5" jdbcType="VARCHAR" property="photo5" />
+    <result column="photoline5" jdbcType="VARCHAR" property="photoline5" />
+    <result column="photo6" jdbcType="VARCHAR" property="photo6" />
+    <result column="photoline6" jdbcType="VARCHAR" property="photoline6" />
+    <result column="photo7" jdbcType="VARCHAR" property="photo7" />
+    <result column="photoline7" jdbcType="VARCHAR" property="photoline7" />
+  </resultMap>
+</mapper>

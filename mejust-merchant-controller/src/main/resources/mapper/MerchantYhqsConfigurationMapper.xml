@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantYhqsConfigurationMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantYhqsConfiguration">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <id column="qstd" jdbcType="CHAR" property="qstd" />
+    <id column="ydzftd" jdbcType="CHAR" property="ydzftd" />
+    <result column="orgcode" jdbcType="VARCHAR" property="orgcode" />
+    <result column="initpasswd" jdbcType="VARCHAR" property="initpasswd" />
+    <result column="orgkey" jdbcType="VARCHAR" property="orgkey" />
+    <result column="appid" jdbcType="VARCHAR" property="appid" />
+  </resultMap>
+</mapper>

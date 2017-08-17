@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantCreditInfoMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantCreditInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <id column="xyid" jdbcType="INTEGER" property="xyid" />
+    <result column="xyname" jdbcType="VARCHAR" property="xyname" />
+    <result column="valuetype" jdbcType="INTEGER" property="valuetype" />
+    <result column="xyvalue" jdbcType="VARCHAR" property="xyvalue" />
+    <result column="xyfenz" jdbcType="DECIMAL" property="xyfenz" />
+    <result column="shdfenz" jdbcType="DECIMAL" property="shdfenz" />
+    <result column="updatedate" jdbcType="TIMESTAMP" property="updatedate" />
+    <result column="photonane" jdbcType="VARCHAR" property="photonane" />
+    <result column="photoaddress" jdbcType="VARCHAR" property="photoaddress" />
+  </resultMap>
+</mapper>

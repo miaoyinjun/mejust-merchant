@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantMemberRedsendMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantMemberRedsend">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="billno" jdbcType="CHAR" property="billno" />
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="opdate" jdbcType="TIMESTAMP" property="opdate" />
+    <result column="operator" jdbcType="VARCHAR" property="operator" />
+    <result column="memgrade" jdbcType="INTEGER" property="memgrade" />
+    <result column="redmodelno" jdbcType="CHAR" property="redmodelno" />
+    <result column="statamount" jdbcType="DECIMAL" property="statamount" />
+    <result column="useamount" jdbcType="DECIMAL" property="useamount" />
+    <result column="red_ele_date" jdbcType="TIMESTAMP" property="redEleDate" />
+    <result column="sendstate" jdbcType="CHAR" property="sendstate" />
+    <result column="senddate" jdbcType="TIMESTAMP" property="senddate" />
+  </resultMap>
+</mapper>

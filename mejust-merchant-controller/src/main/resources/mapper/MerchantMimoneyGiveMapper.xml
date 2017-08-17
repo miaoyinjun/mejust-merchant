@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantMimoneyGiveMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantMimoneyGive">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="billno" jdbcType="CHAR" property="billno" />
+    <result column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="cardno" jdbcType="CHAR" property="cardno" />
+    <result column="givedate" jdbcType="TIMESTAMP" property="givedate" />
+    <result column="giveamount" jdbcType="DECIMAL" property="giveamount" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantPushLogMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantPushLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="merchantno" jdbcType="VARCHAR" property="merchantno" />
+    <id column="senddate" jdbcType="TIMESTAMP" property="senddate" />
+    <result column="sendbillno" jdbcType="VARCHAR" property="sendbillno" />
+  </resultMap>
+</mapper>

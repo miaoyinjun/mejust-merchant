@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantGoodsPriceLogMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantGoodsPriceLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="setdate" jdbcType="TIMESTAMP" property="setdate" />
+    <result column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="barcode" jdbcType="CHAR" property="barcode" />
+    <result column="oldprice" jdbcType="DECIMAL" property="oldprice" />
+    <result column="newprice" jdbcType="DECIMAL" property="newprice" />
+    <result column="operator" jdbcType="CHAR" property="operator" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.Merchant">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="merchantname" jdbcType="VARCHAR" property="merchantname" />
+    <result column="merchanttype" jdbcType="CHAR" property="merchanttype" />
+    <result column="contractno" jdbcType="VARCHAR" property="contractno" />
+    <result column="cardno" jdbcType="CHAR" property="cardno" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="contacts" jdbcType="VARCHAR" property="contacts" />
+    <result column="contactplane" jdbcType="VARCHAR" property="contactplane" />
+    <result column="contactphone" jdbcType="VARCHAR" property="contactphone" />
+    <result column="contactemail" jdbcType="VARCHAR" property="contactemail" />
+    <result column="categoryno" jdbcType="CHAR" property="categoryno" />
+    <result column="category_d" jdbcType="CHAR" property="categoryD" />
+    <result column="shopstoreno" jdbcType="CHAR" property="shopstoreno" />
+    <result column="delivertype" jdbcType="CHAR" property="delivertype" />
+    <result column="delivercash" jdbcType="CHAR" property="delivercash" />
+    <result column="integralno" jdbcType="CHAR" property="integralno" />
+    <result column="rebateno" jdbcType="CHAR" property="rebateno" />
+    <result column="m_money_normal" jdbcType="DECIMAL" property="mMoneyNormal" />
+    <result column="m_money_lock" jdbcType="DECIMAL" property="mMoneyLock" />
+    <result column="serkey" jdbcType="VARCHAR" property="serkey" />
+    <result column="manger_face" jdbcType="CHAR" property="mangerFace" />
+    <result column="sale_face" jdbcType="CHAR" property="saleFace" />
+    <result column="pay_cacle" jdbcType="CHAR" property="payCacle" />
+    <result column="shopstate" jdbcType="CHAR" property="shopstate" />
+    <result column="coopstate" jdbcType="CHAR" property="coopstate" />
+    <result column="provinceno" jdbcType="CHAR" property="provinceno" />
+    <result column="cityno" jdbcType="CHAR" property="cityno" />
+    <result column="regionno" jdbcType="CHAR" property="regionno" />
+    <result column="logophotoname" jdbcType="VARCHAR" property="logophotoname" />
+    <result column="logophotoaddr" jdbcType="VARCHAR" property="logophotoaddr" />
+    <result column="brandname" jdbcType="VARCHAR" property="brandname" />
+    <result column="xypoint" jdbcType="OTHER" property="xypoint" />
+    <result column="xcoord" jdbcType="VARCHAR" property="xcoord" />
+    <result column="ycoord" jdbcType="VARCHAR" property="ycoord" />
+    <result column="lowestamount" jdbcType="DECIMAL" property="lowestamount" />
+    <result column="mangerpasswd" jdbcType="VARCHAR" property="mangerpasswd" />
+    <result column="cashmode" jdbcType="CHAR" property="cashmode" />
+    <result column="taxamount" jdbcType="DECIMAL" property="taxamount" />
+    <result column="contracttype" jdbcType="CHAR" property="contracttype" />
+    <result column="conarea" jdbcType="DECIMAL" property="conarea" />
+    <result column="conbegdate" jdbcType="TIMESTAMP" property="conbegdate" />
+    <result column="conenddate" jdbcType="TIMESTAMP" property="conenddate" />
+    <result column="beaddrelong" jdbcType="CHAR" property="beaddrelong" />
+    <result column="homeorder" jdbcType="SMALLINT" property="homeorder" />
+    <result column="manfloorno" jdbcType="CHAR" property="manfloorno" />
+    <result column="mercredit" jdbcType="DECIMAL" property="mercredit" />
+    <result column="mercreditdate" jdbcType="TIMESTAMP" property="mercreditdate" />
+    <result column="yeusername" jdbcType="VARCHAR" property="yeusername" />
+    <result column="cwskname" jdbcType="VARCHAR" property="cwskname" />
+    <result column="cwskzhno" jdbcType="VARCHAR" property="cwskzhno" />
+    <result column="cwskyinh" jdbcType="VARCHAR" property="cwskyinh" />
+    <result column="cwskyhhh" jdbcType="VARCHAR" property="cwskyhhh" />
+    <result column="cwskyhhh_zh" jdbcType="VARCHAR" property="cwskyhhhZh" />
+    <result column="cwskkhhmc" jdbcType="VARCHAR" property="cwskkhhmc" />
+    <result column="dlgsname" jdbcType="VARCHAR" property="dlgsname" />
+    <result column="channel_no" jdbcType="CHAR" property="channelNo" />
+    <result column="channel_pdano" jdbcType="CHAR" property="channelPdano" />
+    <result column="businareano" jdbcType="CHAR" property="businareano" />
+    <result column="cwskinfo_bill" jdbcType="CHAR" property="cwskinfoBill" />
+    <result column="mershjib" jdbcType="CHAR" property="mershjib" />
+    <result column="merlinesale" jdbcType="CHAR" property="merlinesale" />
+    <result column="merzhname" jdbcType="VARCHAR" property="merzhname" />
+    <result column="ifsxfbt" jdbcType="INTEGER" property="ifsxfbt" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+</mapper>

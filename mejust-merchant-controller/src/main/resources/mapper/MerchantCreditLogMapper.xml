@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantCreditLogMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantCreditLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <id column="begdate" jdbcType="TIMESTAMP" property="begdate" />
+    <id column="enddate" jdbcType="TIMESTAMP" property="enddate" />
+    <result column="saleamount" jdbcType="DECIMAL" property="saleamount" />
+    <result column="weeknum" jdbcType="INTEGER" property="weeknum" />
+    <result column="mercredit_com" jdbcType="DECIMAL" property="mercreditCom" />
+    <result column="mercredit" jdbcType="DECIMAL" property="mercredit" />
+    <result column="mercredit_sum" jdbcType="DECIMAL" property="mercreditSum" />
+  </resultMap>
+</mapper>

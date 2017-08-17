@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantMemberTjMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantMemberTj">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="cardno" jdbcType="CHAR" property="cardno" />
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="saleamount" jdbcType="DECIMAL" property="saleamount" />
+    <result column="salecount" jdbcType="INTEGER" property="salecount" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantContractMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantContract">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <result column="funcxh" jdbcType="INTEGER" property="funcxh" />
+    <result column="funcno" jdbcType="CHAR" property="funcno" />
+    <result column="begdate" jdbcType="TIMESTAMP" property="begdate" />
+    <result column="enddate" jdbcType="TIMESTAMP" property="enddate" />
+    <result column="funcmoney" jdbcType="DECIMAL" property="funcmoney" />
+    <result column="minamount" jdbcType="DECIMAL" property="minamount" />
+    <result column="fundtype" jdbcType="CHAR" property="fundtype" />
+    <result column="fundmode" jdbcType="CHAR" property="fundmode" />
+    <result column="fundstate" jdbcType="CHAR" property="fundstate" />
+  </resultMap>
+</mapper>

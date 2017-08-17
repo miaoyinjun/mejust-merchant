@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantVisitorMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantVisitor">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="merchantno" jdbcType="CHAR" property="merchantno" />
+    <id column="visitordate" jdbcType="TIMESTAMP" property="visitordate" />
+    <id column="cardno" jdbcType="CHAR" property="cardno" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mejust</groupId>
+  <artifactId>mejust-merchant</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.5.6.RELEASE</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  <properties>
+
+
+  </properties>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>mejust-snapshots</id>
+      <url>http://192.166.1.95:8081/nexus/content/repositories/mejust-snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+
+  <build>
+
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+          <encoding>UTF8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <configuration>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <!-- 打包同时生成源码 -->
+      <plugin>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- 打包时跳过单元测试 -->
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+        <executions>
+          <execution>
+            <id>default-deploy</id>
+            <phase>deploy</phase>
+            <goals>
+              <goal>deploy</goal>
+            </goals>
+            <configuration>
+              <!--<repositoryId>${project.distributionManagement.snapshotRepository.id}</repositoryId>-->
+              <!--<url>${project.distributionManagement.snapshotRepository.url}</url>-->
+              <!--<file>${project.build.directory}/${project.artifactId}-${project.version}.jar</file>-->
+              <!--<pomFile>pom.xml</pomFile>-->
+              <!--<groupId>${project.groupId}</groupId>-->
+              <!--<artifactId>${project.artifactId}</artifactId>-->
+              <!--<version>${project.version}</version>-->
+              <!--<uniqueVersion>true</uniqueVersion>-->
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+
+    <defaultGoal>compile</defaultGoal>
+  </build>
+
+  <modules>
+    <module>mejust-merchant-controller</module>
+    <module>mejust-merchant-ms-api</module>
+  </modules>
+</project>

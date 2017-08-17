@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://172.16.1.55:3306/merchantdb?useSSL=false"
+                        userId="mejust"
+                        password="mejust!@#qwe123">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.mejust.merchant.model" targetProject="/home/jason/IdeaProjects/mejust-merchant/mejust-merchant-controller/src/main/java/"/>
+
+        <sqlMapGenerator targetPackage="mapper"  targetProject="/home/jason/IdeaProjects/mejust-merchant/mejust-merchant-controller/src/main/resources"/>
+
+        <javaClientGenerator targetPackage="com.mejust.merchant.dao" targetProject="/home/jason/IdeaProjects/mejust-merchant/mejust-merchant-controller/src/main/java/" type="XMLMAPPER" />
+
+       <!-- <table tableName="t_m_advert_pay" domainObjectName="MerchantAdvertPay" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>-->
+    <!--    <table tableName="t_m_contract" domainObjectName="MerchantContract" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_contract_d" domainObjectName="MerchantContractDetail" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_goods_photo" domainObjectName="MerchantGoodsPhoto" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_goodsinfo" domainObjectName="MerchantGoodsInfo" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_goodsprice_setlog" domainObjectName="MerchantGoodsPriceLog" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+
+        <table tableName="t_m_m_money_give" domainObjectName="MerchantMimoneyGive" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_m_money_pay" domainObjectName="MerchantMimoneyPay" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>    <table tableName="t_m_goodsinfo" domainObjectName="MerchantGoodsInfo" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant" domainObjectName="Merchant" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>    <table tableName="t_m_goodsinfo" domainObjectName="MerchantGoodsInfo" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_config" domainObjectName="MerchantConfig" >
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_config_channel" domainObjectName="MerchantChannelConfig">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_credit" domainObjectName="MerchantCreditInfo">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_credit_d" domainObjectName="MerchantCreditModel">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_credit_log" domainObjectName="MerchantCreditLog">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_label_print" domainObjectName="MerchantLabelPrint">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_log" domainObjectName="MerchantLog">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_member" domainObjectName="MerchantMember">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_member_redsend" domainObjectName="MerchantMemberRedsend">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_member_tj" domainObjectName="MerchantMemberTj">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_photo" domainObjectName="MerchantPhoto">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_redinfo" domainObjectName="MerchantRedPacketInfo">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_sale" domainObjectName="MerchantSale">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_skzf_key" domainObjectName="MerchantSkzfConfiguration">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_visitor" domainObjectName="MerchantVisitor">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_yhqs_key" domainObjectName="MerchantYhqsConfiguration">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>-->
+        <table tableName="t_m_merchant_category_xe" domainObjectName="MerchantAjcodeno">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+        <table tableName="t_m_merchant_ajcodeno" domainObjectName="MerchantShopProcess">
+            <generatedKey column="id" sqlStatement="Mysql" identity="flase"/>
+        </table>
+    </context>
+
+</generatorConfiguration>

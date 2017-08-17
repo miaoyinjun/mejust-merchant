@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mejust.merchant.dao.MerchantShopProcessMapper">
+  <resultMap id="BaseResultMap" type="com.mejust.merchant.model.MerchantShopProcess">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="mjaccount" jdbcType="VARCHAR" property="mjaccount" />
+    <result column="mjtype" jdbcType="CHAR" property="mjtype" />
+    <result column="ajcodeno" jdbcType="VARCHAR" property="ajcodeno" />
+    <result column="opdate" jdbcType="TIMESTAMP" property="opdate" />
+    <result column="openstate" jdbcType="CHAR" property="openstate" />
+  </resultMap>
+</mapper>
